@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball Score Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Baseball Score Tracker</h1>
+  </header>
+
+  <main>
+    <section id="scoreboard">
+      <h2>Scoreboard</h2>
+      <div class="teams">
+        <div class="team">
+          <label for="team1-name">Team 1 Name:</label>
+          <input type="text" id="team1-name" value="Team 1">
+          <span id="team1-score">0</span>
+        </div>
+        <div class="team">
+          <label for="team2-name">Team 2 Name:</label>
+          <input type="text" id="team2-name" value="Team 2">
+          <span id="team2-score">0</span>
+        </div>
+      </div>
+      <div class="inning">Inning: <span id="current-inning">1</span></div>
+    </section>
+
+    <section id="controls">
+      <h2>Controls</h2>
+      <button id="team1-run">Team 1 Run</button>
+      <button id="team2-run">Team 2 Run</button>
+      <button id="next-inning">Next Inning</button>
+      <button id="reset-game">Reset Game</button>
+    </section>
+
+    <section id="stats">
+      <h2>Game Stats</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hits</td>
+            <td id="hits">0</td>
+          </tr>
+          <tr>
+            <td>Strikeouts</td>
+            <td id="strikeouts">0</td>
+          </tr>
+          <tr>
+            <td>Walks</td>
+            <td id="walks">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Baseball Score Tracker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
